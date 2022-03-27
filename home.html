@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/header/favicon.png"/>
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="styles/clipboard.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Josefin+Slab:wght@100;300&family=Source+Code+Pro:wght@200;300;400&display=swap" rel="stylesheet">
+    <script src="scripts/clipboard.js"></script>
+    <script src="scripts/overlay.js"></script>
+
+    
+
+    <title>Junior Portfólio</title>
+</head>
+<body>
+    <div id="main" class="containerOuter">
+        <div class="containerInner">
+            <div class="centerText">
+                <img class="roundedFull solidBorder centerElement picProfile" src="images/body/profile/pic.jpg">
+                <span class="name">Júnior Norato Claro <span class="tiny"> A. </span></span>
+            </div>
+                    
+            <div class="centerElement marginBottom marginTop">
+                <ul class="list">    
+                    <li><a href="https://itch.io/profile/nrc"><img class="picApps" src="images/body/apps/Itchio.png"></a></li>
+                    <li><a href="https://github.com/nrc-junior?tab=repositories"><img class="picApps" src="images/body/apps/Github.png"></a></li>
+                    <li><a href="https://www.youtube.com/c/NRCjr"><img class="picApps" src="images/body/apps/Youtube.png"></a></li>
+                    <li><a href="https://twitter.com/NRCode"><img class="picApps" src="images/body/apps/Twitter.png"></a></li>
+                </ul>
+            </div>
+
+            <div class="boxHighlight centerElement email paddingHor paddingBottom">
+                Junico.nrc@Gmail.com
+                <div class="clipboard">
+                    <button onmouseout="OnExitContainer()" onclick="OnClick();">
+                        <img class="picUi centerLine" src="images/body/ui/clipboard.png">
+                        <span class="tooltiptext" id="Clipboard">Copiar?</span>
+                    </button>
+                </div> 
+            </div>
+            <div class="marginTop centerText">
+                <span class="textWhite">Tenho 23 anos, estou no ultimo ano do curso de <span class="textYellow"><b>Ciências da Computação</b></span> 
+                na faculdade UniFil em Londrina. Meu projeto favorito é <a onclick="document.getElementById('fav').scrollIntoView();">Commodoor</a>! </span>
+            </div>
+
+            <h1 class="margin2xBottom marginTop">
+                <br>
+                <u>Projetos Pessoais</u>
+            </h1> 
+            
+            <div class="boxList">
+
+                <div class="boxItem">
+                    <button onclick="ShowContent('game0');">
+                        <img class="picContent" src="images/content/inside8planks/thumbnail.png">
+                    </button>
+                    <div class="itemContent">
+                            <h3><a onclick="ShowContent('game0');">Inside Eight Planks</a></h3>
+
+                            <ul class="listRow"> 
+                                <li class="tag">
+                                    GameDev
+                                </li>
+                                <li class="tag">
+                                    Unity/C#
+                                </li>
+                                <li class="tag">
+                                    Puzzle
+                                </li>
+                                <li class="tag">
+                                    Escape Room
+                                </li>
+                            </ul>
+
+                            <div class="itemDescription">
+                                <span>Um lugar apertado, com uma TV e um Relógio, o objetivo é encontrar uma saída<br>antes que o tempo acabe</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="boxItem">
+                        <button onclick="ShowContent('game1');">
+                            <img class="picContent" src="images/content/tds/thumbnail.png">
+                        </button>
+                        <div class="itemContent">
+                            <h3><a onclick="ShowContent('game1');">Tower D.S.</a></h3>
+
+                            <div class="listRow">
+                                <ul class="listRow"> 
+                                    <li class="tag">
+                                        GameDev
+                                    </li>
+                                    <li class="tag">
+                                        Unity/C#
+                                    </li>
+                                    <li class="tag">
+                                        Visual Novel
+                                    </li>
+                                    <li class="tag">
+                                        Comédia
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                            <div class="itemDescription">
+                                <span>Dick vive uma sátira romântica com encontros inéditos após instalar um aplicativo de relacionamentos</span>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                    <div class="boxItem">
+                        <button onclick="ShowContent('game2');" id="fav">
+                            <img class="picContent" src="images/content/commodoor/thumbnail.png">
+                        </button>
+                        <div class="itemContent">
+                            <h3><a onclick="ShowContent('game2');">Commodoor</a></h3>
+                            <div class="listRow">
+                                <ul class="listRow"> 
+                                    <li class="tag">
+                                        GameDev
+                                    </li>
+                                    <li class="tag">
+                                        Unity/C#
+                                    </li>
+                                    <li class="tag">
+                                        Isométrico 3D
+                                    </li>
+                                    <li class="tag">
+                                        Terror
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                            <div class="itemDescription">
+                                <span> Na noite de Halloween, você está tentando mexer no seu novo computador com um<br> sistema operacional mistérioso</span>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="boxItem">
+                        <button onclick="ShowContent('game3');">
+                        <img class="picContent" src="images/content/HypnoHeist/thumbnail.png">
+                        </button>
+                        <div class="itemContent">
+                            <h3><a onclick="ShowContent('game3');">Hypno Heist</a></h3>
+
+                            <div class="listRow">
+                                <ul class="listRow"> 
+                                    <li class="tag">
+                                        GameDev
+                                    </li>
+                                    <li class="tag">
+                                        Unity/C#
+                                    </li>
+                                    <li class="tag">
+                                        Puzzle
+                                    </li>
+                                    <li class="tag">
+                                        Stealth 2D
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="itemDescription">
+                                <span> A hipnose é usada para confundir sua visão, se esconda dos guardas e também use eles para chegar no seu objetivo</span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <h1 class="margin2xBottom marginTop">
+                <br>
+                <u>Projetos Academicos</u>
+            </h1> 
+
+            <div class="boxList">
+                <div class="boxItem">
+                    <button onclick="ShowContent('trab0');">
+                    <img class="picContent" src="images/content/tcc/thumbnail.png">
+                    </button>
+                    <div class="itemContent">
+                        <h3><a onclick="ShowContent('trab0');">Dados Abertos Governamentais</a></h3>
+
+                        <div class="listRow">
+                            <ul class="listRow"> 
+                                <li class="tag">
+                                    TCC
+                                </li>
+                                <li class="tag">
+                                    DataViz
+                                </li>
+                                <li class="tag">
+                                    OpenData
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="itemDescription">
+                            <span>Estudei os tipos de visualizações de dados, e utilizei uma fonte de dados de urbanismo para montar um Data Map</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="boxItem">
+                    <button onclick="ShowContent('trab1');">
+                        <img class="picContent" src="images/content/hangman/thumbnail.png">
+                    </button>
+                    <div class="itemContent">
+                            <h3><a onclick="ShowContent('trab1');">Hangman Multiplayer</a></h3>
+
+                            <ul class="listRow"> 
+                                <li class="tag">
+                                    GameDev
+                                </li>
+                                <li class="tag">
+                                    Java
+                                </li>
+                                <li class="tag">
+                                    Socket.io
+                                </li>
+                                <li class="tag">
+                                    CLI
+                                </li>
+                            </ul>
+
+                            <div class="itemDescription">
+                                <span>Um jogo da forca via terminal onde os jogadores se conectam em um servidor. Feito para praticar threads e conexão usando Sockets</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="boxItem">
+                        <button onclick="location.href = `https:\/\/gitlab.com/AdaoNorato/reposit-benchmarking-grafista/-/blob/master/PDF%20conclusao%20trabalho.pdf`">
+                            <img class="picContent" src="images/content/classificadores/thumbnail.png">
+                        </button>
+                        <div class="itemContent">
+                            <h3><a href="https://gitlab.com/AdaoNorato/reposit-benchmarking-grafista/-/blob/master/PDF%20conclusao%20trabalho.pdf">Algoritmos de ordenação</a></h3>
+                            <div class="listRow">
+                                <ul class="listRow"> 
+                                    <li class="tag">
+                                        Gráficos
+                                    </li>
+                                    <li class="tag">
+                                        Java
+                                    </li>
+                                    <li class="tag">
+                                        PDF
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                            <div class="itemDescription">
+                                <span> Uma análise e comparação entre os algoritmos comuns de ordenação</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="boxItem">
+                        <button onclick="ShowContent('trab2');">
+                            <img class="picContent" src="images/content/DS/thumbnail.png">
+                        </button>
+                        <div class="itemContent">
+                            <h3><a onclick="ShowContent('trab2');">Estrutura de Dados</a></h3>
+
+                            <div class="listRow">
+                                <ul class="listRow"> 
+                                    <li class="tag">
+                                        GameDev
+                                    </li>
+                                    <li class="tag">
+                                        .LUA
+                                    </li>
+                                    <li class="tag">
+                                        Isométrico
+                                    </li>
+                                    <li class="tag">
+                                        Love2D                                        
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                            <div class="itemDescription">
+                                <span>Jogo inspirado em simuladores de construção para praticar as estruturas de dados:<br> pilha e fila</span>
+                            </div>
+                        </div>
+                    </div>               
+            </div>
+
+        </div>
+    </div>
+
+    <div class="containerOverlay overlay" id="overlay" >
+        <div class="containerInnerOverlay">
+            <div class="margin2xBottom">
+                    <div class="headerOverlay textWhite">
+                        <button class="textYellow headerItem" onclick="HideContent()">Voltar</button>
+                        <h1 class="headerItem"> <u id="title"></u> </h1>
+                        <span class="headerItem headerDate" id="date"></span>
+                    </div>
+                <div class="headerDesc" id="description"> </div>
+            </div>
+            <div id="value" class="textWhite centerText">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

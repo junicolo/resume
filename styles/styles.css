@@ -1,0 +1,334 @@
+body{
+    background-color: #171731;
+}
+
+ul{
+    list-style-type:none;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+h1{
+    margin: 0px;
+    padding: 0px;
+    font-size: 36px;
+    text-align: center;
+
+    font-family: 'Josefin Slab', serif;
+    font-weight: 100;
+    color: white;
+}
+
+
+u{
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.03em;
+}
+u::before{
+    content: " ";
+}
+
+u::after{
+    content: " ";
+}
+
+@media (min-width: 573px) {
+    .boxList {
+        margin-left: 16.5%;
+
+    }
+  }
+  
+@media (max-width: 573px) {
+    .boxList {
+        margin-left: 20%;
+
+    }
+}
+
+.containerOuter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerInner{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.containerInnerOverlay{
+    margin-top: 10px;
+    background-color: #111337;
+    max-width: 912px;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(0 0px 22px rgba(0,0,0,.7));
+
+}
+
+.roundedFull{
+    border-radius: 50%;
+}
+
+.solidBorder{
+    border-style: solid;
+    border-width: 8px;
+    border-color: #C3A45E;
+}
+
+.centerElement{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centerText{
+    width: 100%;
+    text-align: center;
+}
+
+.picProfile{
+    width:250px;
+    height:250px;
+}
+
+.picApps{
+    width: 44px;
+    height: 44px;
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,.5));
+}
+
+.picUi{
+    width: 25px;
+    height: 25px;
+}
+
+.picContent{
+    width: 256px;
+    height: 144px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.centerLine{
+    position: relative; 
+    top: 4px;
+}
+
+.name{
+    display: inline-block;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 300;
+    padding-top: 11px;
+    font-size: 36px;
+    color: #C3A45E;
+}
+
+.name .tiny{
+    font-size: 16px;
+
+}
+
+.email{
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+
+    font-size: 18px;
+}
+
+.list{
+    display:flex;  
+    flex-direction: row;
+    justify-content:center; 
+    padding: 0;
+}
+
+.list li{
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+.textWhite{
+    color: white;
+    font-weight: 200;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
+}
+
+.textYellow{
+    color: #C3A45E;
+}
+
+.boxHighlight{
+
+    width: fit-content;
+    background-color: #1C3056;
+    border-radius: 15px;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #77B1FE;
+}
+
+.boxItem{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.itemContent{
+    text-align: center;
+    width: 256px;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+}
+
+.itemContent h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #C3A45E;
+    font-family: 'Fira Code', monospace;
+    text-align: center;
+}
+
+h3 a{
+    text-decoration: none;
+}
+
+.itemDescription{
+    margin-top: 3px;
+    background-color: #121225;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.itemDescription span{
+    color: white;
+    font-size: 14px;
+    font-family: 'Fira Code', monospace;
+}
+
+.listRow{
+    text-align:center;
+}
+
+
+ul .tag{
+    display: inline-block;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    background-color: #1C3056;
+    margin-bottom: 5px;
+    
+    text-align:center;
+    font-size: 16px;
+    color: #C3A45E;
+    font-family: 'Source Code Pro', monospace;
+    
+}
+.marginLeft{
+    margin-left: 10px;
+}
+.marginTop{
+    margin-top: 10px;
+}
+.marginBottom{
+    margin-bottom: 8px;
+}
+.margin2xBottom{
+    margin-bottom: 16px;
+}
+
+.paddingHor{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.paddingBottom{
+    padding-bottom: 3px;
+}
+
+.containerOverlay{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overlay{
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 2;
+    background-color: #0e0f2c;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay img{ 
+ border-radius: 10px;
+}
+
+.headerOverlay{
+    display: flex;  
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+a{
+    cursor: pointer;
+}
+
+.headerOverlay button{
+    font-size: 18px;
+    
+}
+
+.headerDesc{    
+    padding-left: 30px;
+    font-size: 14px;
+    color:  #C3A45E;
+}
+
+.headerDesc a{    
+    font-size: 18px;
+    color: #C3A45E;
+}
+
+.headerItem{
+    margin-right: 20px ;
+    margin-left: 20px ;
+}
+
+.headerItem #date{
+    font-size: 18px;
+    color: #C4C4C4;
+}
+
+.headerItem #title {
+    font-size: 28px;
+    justify-content: right;
+    font-family: 'Fira Code', monospace;
+}
+
+#description{
+    font-family: 'Fira Code', monospace;
+}
+
+a {
+    font-family: 'Fira Code', monospace;
+    color: #C3A45E;
+}
+
