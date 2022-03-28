@@ -1,4 +1,4 @@
-const email = "junico.nrc@gmail.com"
+const email = "adao.nrc@edu.unifil.br"
 
 function OnClick() {
   navigator.clipboard.writeText(email);
